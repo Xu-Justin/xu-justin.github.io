@@ -1,0 +1,28 @@
+.profile {
+    height: 100svh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 24px;
+}
+
+.profile-image {
+    max-width: 72vw;
+    width: 320px;
+    margin: 8px;
+}
+
+.profile-badge {
+    margin-block: 32px;
+}
+
+@media (max-height: 660px) {
+    .profile {
+        height: 660px;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 32px;
+    }
+}
