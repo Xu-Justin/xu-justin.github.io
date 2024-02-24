@@ -21,6 +21,22 @@
     margin-top: 32px;
 }
 
+.profile-skill {
+    transition: all 0.25s ease-out;
+    scale: 1;
+    padding-inline: 0;
+    font-weight: inherit;
+    cursor: default;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .profile-skill:hover {
+        scale: 1.2;
+        padding-inline: 8px;
+        font-weight: bold;
+    }
+}
+
 .profile-scroll {
     margin-top: 32px;
     margin-bottom: 48px;

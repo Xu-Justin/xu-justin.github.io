@@ -15,7 +15,7 @@ function Footer() {
                     variant={'body1'}
                     fontWeight={'medium'}
                 >
-                    Crafted with 🌈 <br/> by <b>William Justin</b>
+                    Crafted with 🧡 <br/> by <b>William Justin</b>
                 </Typography>
             }
             {!xs &&
@@ -23,7 +23,7 @@ function Footer() {
                     variant={'body1'}
                     fontWeight={'medium'}
                 >
-                    Crafted with 🌈 by <b>William Justin</b>
+                    Crafted with 🧡 by <b>William Justin</b>
                 </Typography>
             }
             <Stack direction={'row'} spacing={1} justifyContent={'center'} alignItems={'center'}>

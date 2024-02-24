@@ -57,6 +57,7 @@ function Profile() {
                         {profileSkillsRow.map((skill, index) => (
                             <Typography
                                 key={index}
+                                className={'profile-skill'}
                                 variant={xs ? 'body2' : 'body1'}
                                 textAlign={'center'}
                                 sx={{...limitLines(1)}}
