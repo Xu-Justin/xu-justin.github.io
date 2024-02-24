@@ -9,6 +9,7 @@ function App() {
 
     useEffect(() => {
         scrollToTop(false);
+        console.info('Crafted with 🧡 by William Justin');
     });
 
     return (
