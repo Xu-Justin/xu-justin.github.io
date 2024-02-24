@@ -20,6 +20,9 @@
 body {
     margin: 0;
     font-family: "Montserrat", "Helvetica", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #root {
@@ -27,6 +30,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding-inline: 24px;
+    max-width: 800px;
 }
 
 h1 {
@@ -61,4 +66,8 @@ button:focus-visible {
     -moz-user-select: none;         /* Old versions of Firefox */
     -ms-user-select: none;          /* Internet Explorer/Edge */
     user-select: none;              /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+hr {
+    background-color: var(--color-light-grey);
 }

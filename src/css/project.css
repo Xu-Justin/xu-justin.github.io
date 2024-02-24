@@ -4,9 +4,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-inline: 24px;
     margin-top: 32px;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
 }
 
 .project-stack {
