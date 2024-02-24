@@ -4,9 +4,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import {Button, Stack, Typography} from "@mui/material";
-import {URL_PROFILE_GITHUB, URL_PROFILE_LINKEDIN} from "../utils/Constants.tsx";
 import {limitLines, newTab} from "../utils/Style.tsx";
 import {useBreakpoints} from "../utils/Utils.tsx";
+import {URL_PROFILE} from "../utils/Constants.tsx";
 
 function Profile() {
 
@@ -20,7 +20,7 @@ function Profile() {
 
     return (
         <div className={'profile'}>
-            <img className={'profile-image'} src={JustinXu} alt={'William Justin'}/>
+            <img className={'profile-image no-select'} src={JustinXu} alt={'William Justin'}/>
             <Typography
                 variant={'h1'}
                 fontWeight={'bold'}
@@ -33,7 +33,7 @@ function Profile() {
                 <Button
                     variant={'contained'}
                     size={'large'}
-                    href={URL_PROFILE_GITHUB}
+                    href={URL_PROFILE.GitHub}
                     sx={{minWidth: 0}}
                     {...newTab}
                 >
@@ -43,7 +43,7 @@ function Profile() {
                 <Button
                     variant={'contained'}
                     size={'large'}
-                    href={URL_PROFILE_LINKEDIN}
+                    href={URL_PROFILE.LinkedIn}
                     sx={{minWidth: 0, px: 2}}
                     {...newTab}
                 >
@@ -71,6 +71,7 @@ function Profile() {
                 <Stack className={'profile-scroll'} direction={'row'} spacing={2} justifyContent={'center'} alignItems={'center'}>
                     <ArrowDownwardIcon fontSize={'small'}/>
                     <Typography
+                        className={'no-select'}
                         variant={'caption'}
                         fontWeight={'medium'}
                         textTransform={'uppercase'}

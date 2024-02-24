@@ -1,0 +1,28 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-block: 0;
+    transition: padding-block 0.25s ease-out, scale 0.25s ease-out;
+
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .project-card:hover {
+        padding-block: 32px;
+        scale: 1.1;
+        cursor: pointer;
+    }
+}
+
+.project-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
