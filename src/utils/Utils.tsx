@@ -16,7 +16,15 @@ export const useBreakpoints = () => {
     }
 }
 
-export const scrollToTop = () => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+export const scroll = (position: number, smooth: boolean = true) => {
+    window.scrollTo({top: position, behavior: smooth ? 'smooth' : 'instant'});
+}
+
+export const scrollToTop = (smooth: boolean = true) => {
+    scroll(0, smooth);
+}
+
+export const scrollToContent = (smooth: boolean = true) => {
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+    scroll(vh, smooth);
 }

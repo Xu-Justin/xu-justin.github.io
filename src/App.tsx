@@ -6,7 +6,7 @@ import {scrollToTop} from "./utils/Utils.tsx";
 function App() {
 
     useEffect(() => {
-        scrollToTop();
+        scrollToTop(false);
     });
 
     return (

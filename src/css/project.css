@@ -5,10 +5,11 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-inline: 24px;
-    margin-block: 48px;
+    margin-top: 32px;
+    margin-bottom: 64px;
 }
 
 .project-stack {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 32px;
 }

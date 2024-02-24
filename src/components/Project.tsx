@@ -29,7 +29,7 @@ function Project() {
     ]
 
     return (
-        <div className={'project'}>
+        <div className={'project'} id={"project"}>
             <Typography
                 variant={'h1'}
                 fontWeight={'medium'}
@@ -37,7 +37,7 @@ function Project() {
             >
                 Personal Project
             </Typography>
-            <Stack className={'project-stack'} direction={'column'} spacing={5}>
+            <Stack className={'project-stack'} direction={'column'} spacing={4}>
                 {personalProjects.map((project, index) => (
                     <ProjectCard key={index} {...project}/>
                 ))}

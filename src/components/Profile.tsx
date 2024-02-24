@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import {Button, Stack, Typography} from "@mui/material";
 import {limitLines, newTab} from "../utils/Style.tsx";
-import {useBreakpoints} from "../utils/Utils.tsx";
+import {scrollToContent, useBreakpoints} from "../utils/Utils.tsx";
 import {URL_PROFILE} from "../utils/Constants.tsx";
 
 function Profile() {
@@ -67,7 +67,7 @@ function Profile() {
                     </Stack>
                 ))}
             </Stack>
-            <div className={'profile-scroll-container'}>
+            <div className={'profile-scroll-container'} onClick={() => scrollToContent()}>
                 <Stack className={'profile-scroll'} direction={'row'} spacing={2} justifyContent={'center'} alignItems={'center'}>
                     <ArrowDownwardIcon fontSize={'small'}/>
                     <Typography
@@ -79,7 +79,7 @@ function Profile() {
                         textAlign={'center'}
                         sx={{...limitLines(1)}}
                     >
-                        Scroll Down
+                        Explore
                     </Typography>
                     <ArrowDownwardIcon fontSize={'small'}/>
                 </Stack>
