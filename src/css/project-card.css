@@ -26,3 +26,15 @@
     border-radius: 8px;
     margin-bottom: 8px;
 }
+
+@media (max-width: 900px) {
+    .project-card-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 800px) {
+    .project-card-image {
+        height: auto;
+    }
+}
