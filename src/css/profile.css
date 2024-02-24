@@ -9,13 +9,45 @@
 }
 
 .profile-image {
-    max-width: 72vw;
+    max-width: 64vw;
     width: 320px;
-    margin: 8px;
+    margin-top: 32px;
 }
 
 .profile-badge {
-    margin-block: 32px;
+    margin-top: 32px;
+}
+
+.profile-skills {
+    margin-top: 32px;
+}
+
+.profile-scroll {
+    margin-top: 32px;
+    margin-bottom: 48px;
+
+    animation: shakeY;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.profile-scroll-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+    animation: profileScrollContainerAnimation 2s ease-in-out 0s forwards;
+    opacity: 0;
+    max-height: 0;
+}
+
+@keyframes profileScrollContainerAnimation {
+    to {
+        opacity: 1;
+        max-height: 120px;
+    }
 }
 
 @media (max-height: 660px) {
@@ -23,6 +55,9 @@
         height: 660px;
         flex-direction: column;
         justify-content: flex-start;
-        margin-top: 32px;
+    }
+
+    .profile-scroll {
+        display: none !important;
     }
 }

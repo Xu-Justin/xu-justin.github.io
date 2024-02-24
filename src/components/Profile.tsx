@@ -2,6 +2,7 @@ import '../css/profile.css';
 import JustinXu from '/JustinXu.svg';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import {Button, Stack, Typography} from "@mui/material";
 import {URL_PROFILE_GITHUB, URL_PROFILE_LINKEDIN} from "../utils/Constants.tsx";
 import {limitLines, newTab} from "../utils/Style.tsx";
@@ -47,14 +48,15 @@ function Profile() {
                     {...newTab}
                 >
                     <LinkedInIcon/>
-                    &#8203; {/* Zero-Width Character to maintain MUI card height */}
+                    &#8203; {/* Zero-Width Character to maintain MUI button height */}
                 </Button>
             </Stack>
             <Stack className={'profile-skills'} direction={'column'} spacing={2} justifyContent={'center'} alignItems={'center'}>
-                {profileSkills.map(profileSkillsRow => (
-                    <Stack className={'profile-skills-row'} direction={'row'} spacing={2} justifyContent={'center'} alignItems={'center'}>
-                        {profileSkillsRow.map(skill => (
+                {profileSkills.map((profileSkillsRow, index) => (
+                    <Stack className={'profile-skills-row'} direction={'row'} spacing={2} justifyContent={'center'} alignItems={'center'} key={index}>
+                        {profileSkillsRow.map((skill, index) => (
                             <Typography
+                                key={index}
                                 variant={xs ? 'body2' : 'body1'}
                                 textAlign={'center'}
                                 sx={{...limitLines(1)}}
@@ -65,6 +67,22 @@ function Profile() {
                     </Stack>
                 ))}
             </Stack>
+            <div className={'profile-scroll-container'}>
+                <Stack className={'profile-scroll'} direction={'row'} spacing={2} justifyContent={'center'} alignItems={'center'}>
+                    <ArrowDownwardIcon fontSize={'small'}/>
+                    <Typography
+                        variant={'caption'}
+                        fontWeight={'medium'}
+                        textTransform={'uppercase'}
+                        letterSpacing={'2px'}
+                        textAlign={'center'}
+                        sx={{...limitLines(1)}}
+                    >
+                        Scroll Down
+                    </Typography>
+                    <ArrowDownwardIcon fontSize={'small'}/>
+                </Stack>
+            </div>
         </div>
     )
 }
