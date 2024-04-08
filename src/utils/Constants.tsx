@@ -8,3 +8,8 @@ export const URL_PROJECT = {
     DeepFaceDrawing: 'https://github.com/Xu-Justin/DeepFaceDrawing',
     GrayscaleFaceColoring: 'https://github.com/Xu-Justin/Grayscale-Face-Coloring',
 }
+
+export const URL_DATASET = {
+    PersonFaceDataset: 'https://www.kaggle.com/datasets/almightyj/person-face-dataset-thispersondoesnotexist',
+    PersonFaceSketchesDataset: 'https://www.kaggle.com/datasets/almightyj/person-face-sketches',
+}
