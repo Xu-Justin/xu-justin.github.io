@@ -5,12 +5,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    animation: profileAnimation 2s ease-in-out 0s forwards;
+    opacity: 0;
+}
+
+@keyframes profileAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+.profile-image-container {
+    margin-top: 32px;
+    padding-bottom: 320px;
+    height: 0;
+    width: 320px;
+    position: relative;
 }
 
 .profile-image {
     max-width: 64vw;
     width: 320px;
-    margin-top: 32px;
+    height: 320px;
+    position: absolute;
 }
 
 .profile-badge {
@@ -53,7 +71,7 @@
     justify-content: flex-end;
     flex-grow: 1;
 
-    animation: profileScrollContainerAnimation 2s ease-in-out 0s forwards;
+    animation: profileScrollContainerAnimation 2s ease-in-out 0.2s forwards;
     opacity: 0;
     max-height: 0;
 }

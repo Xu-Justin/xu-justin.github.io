@@ -20,7 +20,9 @@ function Profile() {
 
     return (
         <div className={'profile'}>
-            <img className={'profile-image no-select'} src={JustinXu} alt={'William Justin'}/>
+            <div className={'profile-image-container'}>
+                <img className={'profile-image no-select'} src={JustinXu} alt={'William Justin'}/>
+            </div>
             <Typography
                 variant={'h1'}
                 fontWeight={'bold'}
