@@ -18,7 +18,7 @@ function Project() {
         },
         {
             image: DeepFaceDrawing,
-            title: 'Photo-Realistic Face Images Generation from Sketches',
+            title: 'Face Images Generation from Sketches',
             tags: ['Python', 'Generative Adversarial Network'],
             url: URL_PROJECT.DeepFaceDrawing,
         },
