@@ -16,6 +16,22 @@
     }
 }
 
+.profile-name {
+    -webkit-text-fill-color: transparent;
+    background: rgb(213,217,255);
+    background: linear-gradient(60deg, rgba(213,217,255,1) 0%, rgba(140,163,255,1) 50%, rgba(213,217,255,1) 100%);
+    background-size: 200% auto;
+    background-clip: text;
+
+    animation: profileNameAnimation 12s linear 0s infinite;
+}
+
+@keyframes profileNameAnimation {
+    to {
+        background-position: 200% center;
+    }
+}
+
 .profile-image-container {
     display: flex;
     justify-content: center;

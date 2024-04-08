@@ -24,6 +24,7 @@ function Profile() {
                 <img className={'profile-image no-select'} src={JustinXu} alt={'William Justin'}/>
             </div>
             <Typography
+                className={'profile-name'}
                 variant={'h1'}
                 fontWeight={'bold'}
                 textTransform={'uppercase'}
