@@ -16,7 +16,7 @@ function App() {
         <>
             <Profile/>
             <Project/>
-            <Divider flexItem/>
+            <Divider flexItem style={{marginBlock: "32px"}}/>
             <Footer/>
         </>
     )
