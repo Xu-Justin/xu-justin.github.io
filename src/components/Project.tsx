@@ -1,4 +1,5 @@
 import '../css/project.css';
+import ExtraMileValley from '/personal-projects/extra-mile-valley.jpg';
 import Patchmentation from '/personal-projects/patchmentation.jpg';
 import DeepFaceDrawing from '/personal-projects/deep-face-drawing.jpg';
 import GrayscaleFaceColoring from '/personal-projects/grayscale-face-coloring.jpg';
@@ -10,6 +11,12 @@ import {URL_DATASET, URL_PROJECT} from "../utils/Constants.tsx";
 
 function Project() {
     const personalProjects: ProjectCardProps[] = [
+        // {
+        //     image: ExtraMileValley,
+        //     title: 'Extra Mile Valley',
+        //     tags: ['Typescript', 'React', 'Gamification'],
+        //     url: undefined,
+        // },
         {
             image: Patchmentation,
             title: 'Patchmentation: A Python Library for Seamless Patch Augmentation',
