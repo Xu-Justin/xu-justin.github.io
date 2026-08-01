@@ -50,7 +50,7 @@ const CONTACT_LINKS = [
 
 export function ContactSection() {
   return (
-    <section className="flex flex-col items-center w-full py-24 px-6 md:px-16 lg:px-24">
+    <section id="contact" className="flex flex-col items-center w-full py-24 px-6 md:px-16 lg:px-24">
       <div className="flex flex-col gap-16 w-full max-w-400">
         <div className="flex flex-col gap-4">
           <p className="font-mono text-sm tracking-[0.3em] text-muted-foreground uppercase">
