@@ -3,7 +3,7 @@ const TECH_STACK = [
   { name: "Kotlin", icon: "K" },
   { name: "TypeScript", icon: "TS" },
   { name: "Python", icon: "🐍" },
-  { name: "C++", icon: "C++" },
+  { name: "C/C++", icon: undefined },
   { name: "Spring Boot", icon: "🍃" },
   { name: "React", icon: "⚛" },
   { name: "Next.js", icon: "▲" },
@@ -15,15 +15,15 @@ const TECH_STACK = [
   { name: "MCP", icon: "◈" }
 ];
 
-function TechItem({ name, icon }: { name: string; icon: string }) {
+function TechItem({ name, icon }: { name: string; icon?: string }) {
   return (
     <div className="flex flex-row justify-start items-center gap-2 border border-border bg-background px-5 py-3 font-mono text-sm text-muted-foreground">
-      <span aria-hidden className="text-base leading-none">
-        {icon}
-      </span>
-      <span className={"whitespace-nowrap"}>
-        {name}
-      </span>
+      {icon ?? (
+        <span aria-hidden className="text-base leading-none">
+          {icon}
+        </span>
+      )}
+      <span className={"whitespace-nowrap"}>{name}</span>
     </div>
   );
 }
