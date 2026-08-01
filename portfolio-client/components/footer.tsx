@@ -73,7 +73,7 @@ export function Footer() {
             © {new Date().getFullYear()} William Justin.
           </p>
           <p className="font-mono text-xs text-muted-foreground">
-            {"// Directed by me. Built with AI."}
+            {"// Directed by human. Built with AI."}
           </p>
         </div>
       </div>
