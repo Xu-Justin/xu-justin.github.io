@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <header className={'p-6 '}>
+    <header className={"p-6 "}>
       <nav>
         <ul>
           <li>Home</li>
@@ -10,5 +10,5 @@ export function Header() {
         </ul>
       </nav>
     </header>
-  )
+  );
 }

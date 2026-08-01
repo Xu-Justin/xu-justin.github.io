@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={cn("antialiased", fontSans.variable, "font-mono", fontMono.variable)}>
-    <body>
+    <body className={"flex flex-col justify-start items-start w-screen h-svh overflow-x-hidden"}>
     <ThemeProvider>
       {children}
     </ThemeProvider>

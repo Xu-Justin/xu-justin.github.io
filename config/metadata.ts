@@ -1,4 +1,4 @@
-import { Metadata } from "next"
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "William Justin — Fullstack Engineer & AI Projects",
@@ -37,12 +37,12 @@ export const metadata: Metadata = {
     "Traveloka",
     "Samsung Research Indonesia",
     "Competitive Programmer",
-    "ICPC",
+    "ICPC"
   ],
   authors: [{ name: "William Justin", url: "https://xu-justin.github.io" }],
   metadataBase: new URL("https://xu-justin.github.io"),
   alternates: {
-    canonical: "/",
+    canonical: "/"
   },
   openGraph: {
     title: "William Justin — Fullstack Engineer & AI Projects",
@@ -55,20 +55,20 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "William Justin — Fullstack Software Engineer",
-      },
+        alt: "William Justin — Fullstack Software Engineer"
+      }
     ],
     locale: "en_US",
-    type: "website",
+    type: "website"
   },
   twitter: {
     card: "summary_large_image",
     title: "William Justin — Fullstack Engineer & AI Projects",
     description:
       "Fullstack engineer sharing what he builds, from fullstack systems to AI projects.",
-    images: ["/og-image.png"],
+    images: ["/og-image.png"]
   },
   icons: {
-    icon: "/favicon.ico",
-  },
-}
+    icon: "/favicon.ico"
+  }
+};
