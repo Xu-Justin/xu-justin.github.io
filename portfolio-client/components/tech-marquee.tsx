@@ -18,12 +18,12 @@ const TECH_STACK = [
 function TechItem({ name, icon }: { name: string; icon?: string }) {
   return (
     <div className="flex flex-row justify-start items-center gap-2 border border-border bg-background px-5 py-3 font-mono text-sm text-muted-foreground">
-      {icon ?? (
+      {icon && (
         <span aria-hidden className="text-base leading-none">
           {icon}
         </span>
       )}
-      <span className={"whitespace-nowrap"}>{name}</span>
+      <span className="whitespace-nowrap">{name}</span>
     </div>
   );
 }

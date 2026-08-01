@@ -1,4 +1,5 @@
 import { ProjectCard } from "@/components/project-card";
+import { SectionHeader } from "@/components/section-header";
 
 const DUMMY_PROJECTS = [
   {
@@ -49,19 +50,11 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="flex flex-col items-center justify-start w-full py-24 px-6 md:px-16 lg:px-24">
       <div className="flex flex-col gap-16 w-full max-w-400">
-        <div className="flex flex-col gap-4">
-          <p className="font-mono text-sm tracking-[0.3em] text-muted-foreground uppercase">
-            {"// My Work"}
-          </p>
-          <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl">
-            Featured Projects
-          </h2>
-          <p className="font-mono text-base text-muted-foreground max-w-2xl leading-relaxed">
-            These are some of my favorite things I&#39;ve built so far. Each one
-            represents a challenge, a lesson, and a chance to turn ideas into
-            products and something meaningful.
-          </p>
-        </div>
+        <SectionHeader
+          label="// My Work"
+          title="Featured Projects"
+          subtitle="These are some of my favorite things I've built so far. Each one represents a challenge, a lesson, and a chance to turn ideas into products and something meaningful."
+        />
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {DUMMY_PROJECTS.map((project) => (
