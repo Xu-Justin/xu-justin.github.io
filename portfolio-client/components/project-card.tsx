@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
 
 interface ProjectCardProps {
@@ -8,9 +9,31 @@ interface ProjectCardProps {
   image?: StaticImageData | string;
 }
 
+const Wrapper = ({
+  href,
+  children,
+}: {
+  href?: string;
+  children: ReactNode;
+}) =>
+  href ? (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex flex-col border border-border hover:border-primary transition-colors duration-200"
+    >
+      {children}
+    </a>
+  ) : (
+    <div className="group flex flex-col border border-border hover:border-primary transition-colors duration-200">
+      {children}
+    </div>
+  );
+
 export function ProjectCard({ title, description, tags, href, image }: ProjectCardProps) {
   return (
-    <div className="flex flex-col gap-4 border border-border hover:border-primary transition-colors duration-200">
+    <Wrapper href={href}>
       <div className="relative w-full aspect-video bg-muted overflow-hidden">
         {image ? (
           <Image
@@ -39,7 +62,7 @@ export function ProjectCard({ title, description, tags, href, image }: ProjectCa
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2 mt-auto">
+        <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <span
               key={tag}
@@ -51,19 +74,11 @@ export function ProjectCard({ title, description, tags, href, image }: ProjectCa
         </div>
 
         {href && (
-          <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group mt-auto self-start font-mono text-sm text-primary underline-offset-4 hover:underline"
-          >
-            View Project{" "}
-            <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
-              →
-            </span>
-          </a>
+          <span className="font-mono text-primary text-sm inline-flex items-center gap-1 transition-transform duration-200 group-hover:translate-x-1 mt-auto">
+            View Project →
+          </span>
         )}
       </div>
-    </div>
+    </Wrapper>
   );
 }
