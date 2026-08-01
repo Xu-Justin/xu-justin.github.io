@@ -52,8 +52,8 @@ export function ProjectCard({ title, description, tags, href, image }: ProjectCa
         )}
       </div>
 
-      <div className="flex flex-col gap-4 p-6 pt-2">
-        <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-3 sm:gap-4 p-6 pt-2">
+        <div className="flex flex-col gap-1 sm:gap-2">
           <h3 className="font-heading text-xl font-semibold tracking-tight">
             {title}
           </h3>

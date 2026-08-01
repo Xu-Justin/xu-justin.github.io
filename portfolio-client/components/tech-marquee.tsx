@@ -17,9 +17,9 @@ const TECH_STACK = [
 
 function TechItem({ name, icon }: { name: string; icon?: string }) {
   return (
-    <div className="flex flex-row justify-start items-center gap-2 border border-border bg-background px-5 py-3 font-mono text-sm text-muted-foreground">
+    <div className="flex flex-row justify-start items-center gap-1.5 sm:gap-2 border border-border bg-background px-3 py-2 sm:px-5 sm:py-3 font-mono text-xs sm:text-sm text-muted-foreground">
       {icon && (
-        <span aria-hidden className="text-base leading-none">
+        <span aria-hidden className="text-sm sm:text-base leading-none">
           {icon}
         </span>
       )}
@@ -32,9 +32,9 @@ export function TechMarquee() {
   const items = [...TECH_STACK, ...TECH_STACK, ...TECH_STACK, ...TECH_STACK];
 
   return (
-    <div className="flex flex-col justify-start items-center border-y border-border bg-background/80 backdrop-blur-sm w-full max-w-screen overflow-hidden gap-4 pt-8 pb-4 px-6 md:px-16 lg:px-24">
-      <div className="flex flex-col gap-4 w-full max-w-400">
-        <p className="font-mono text-sm tracking-[0.3em] text-muted-foreground uppercase">
+    <div className="flex flex-col justify-start items-center border-y border-border bg-background/80 backdrop-blur-sm w-full max-w-screen overflow-hidden gap-3 sm:gap-4 pt-6 sm:pt-8 pb-3 sm:pb-4 px-6 md:px-16 lg:px-24">
+      <div className="flex flex-col gap-3 sm:gap-4 w-full max-w-400">
+        <p className="font-mono text-xs sm:text-sm tracking-[0.3em] text-muted-foreground uppercase">
           {"// Tech Stack"}
         </p>
       </div>

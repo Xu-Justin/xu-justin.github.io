@@ -63,8 +63,8 @@ function ContactCard({ label, description, action, href, Icon }: ContactLink) {
 
 export function ContactSection() {
   return (
-    <section id="contact" className="flex flex-col items-center w-full py-24 px-6 md:px-16 lg:px-24">
-      <div className="flex flex-col gap-16 w-full max-w-400">
+    <section id="contact" className="flex flex-col items-center w-full py-16 sm:py-24 px-6 md:px-16 lg:px-24">
+      <div className="flex flex-col gap-12 sm:gap-16 w-full max-w-400">
         <SectionHeader
           label="// Get In Touch"
           title="Have Something in Mind?"

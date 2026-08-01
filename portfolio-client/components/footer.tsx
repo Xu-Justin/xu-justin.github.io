@@ -15,7 +15,7 @@ const SOCIAL_LINKS = [
 export function Footer() {
   return (
     <footer className="flex flex-col items-center w-full">
-      <div className="flex flex-col justify-start items-center gap-8 w-full px-6 md:px-16 lg:px-24 border-t border-border py-12">
+      <div className="flex flex-col justify-start items-center gap-6 sm:gap-8 w-full px-6 md:px-16 lg:px-24 border-t border-border py-8 sm:py-12">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between w-full max-w-400">
           <div className="flex flex-col gap-1">
             <span className="font-heading text-lg font-bold tracking-tight">

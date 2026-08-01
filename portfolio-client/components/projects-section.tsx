@@ -48,8 +48,8 @@ const DUMMY_PROJECTS = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="flex flex-col items-center justify-start w-full py-24 px-6 md:px-16 lg:px-24">
-      <div className="flex flex-col gap-16 w-full max-w-400">
+    <section id="projects" className="flex flex-col items-center justify-start w-full py-16 sm:py-24 px-6 md:px-16 lg:px-24">
+      <div className="flex flex-col gap-12 sm:gap-16 w-full max-w-400">
         <SectionHeader
           label="// My Work"
           title="Featured Projects"

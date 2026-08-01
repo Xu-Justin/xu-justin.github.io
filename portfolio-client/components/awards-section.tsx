@@ -61,7 +61,7 @@ function AwardCard({ title, issuer, date, description }: Award) {
           {issuer}
         </span>
       </div>
-      <p className="font-mono text-sm text-muted-foreground leading-relaxed">
+      <p className="font-mono text-sm text-muted-foreground leading-relaxed text-pretty">
         {description}
       </p>
     </div>
@@ -96,14 +96,14 @@ function AwardGroup({ label, Icon, awards }: AwardGroupProps) {
 
 export function AwardsSection() {
   return (
-    <section id="awards" className="flex flex-col items-center w-full py-24 px-6 md:px-16 lg:px-24">
-      <div className="flex flex-col gap-16 w-full max-w-400">
+    <section id="awards" className="flex flex-col items-center w-full py-16 sm:py-24 px-6 md:px-16 lg:px-24">
+      <div className="flex flex-col gap-12 sm:gap-16 w-full max-w-400">
         <SectionHeader
           label="// Recognition"
           title="Awards & Honors"
           subtitle="Recognition earned through consistent delivery at work and active contribution to the competitive programming community."
         />
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-8 sm:gap-12">
           <AwardGroup label="Professional" Icon={TrophyIcon} awards={PROFESSIONAL_AWARDS} />
           <AwardGroup label="Competitive Programming" Icon={PencilIcon} awards={CP_AWARDS} />
         </div>

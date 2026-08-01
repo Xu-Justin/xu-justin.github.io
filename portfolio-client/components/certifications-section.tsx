@@ -41,7 +41,7 @@ function CertificationCard({ title, issuer, description, href }: Certification) 
         </span>
         <span className="font-mono text-sm text-primary">{issuer}</span>
       </div>
-      <p className="font-mono text-sm text-muted-foreground leading-relaxed mt-auto">
+      <p className="font-mono text-sm text-muted-foreground leading-relaxed mt-auto text-pretty">
         {description}
       </p>
     </>
@@ -72,8 +72,8 @@ function CertificationCard({ title, issuer, description, href }: Certification) 
 
 export function CertificationsSection() {
   return (
-    <section id="certifications" className="flex flex-col items-center w-full py-24 px-6 md:px-16 lg:px-24">
-      <div className="flex flex-col gap-16 w-full max-w-400">
+    <section id="certifications" className="flex flex-col items-center w-full py-16 sm:py-24 px-6 md:px-16 lg:px-24">
+      <div className="flex flex-col gap-12 sm:gap-16 w-full max-w-400">
         <SectionHeader
           label="// Credentials"
           title="Certifications"
