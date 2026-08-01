@@ -134,11 +134,12 @@
         @apply bg-background text-foreground;
     }
 
-    button:not(:disabled), [role="button"]:not(:disabled) {
-        cursor: pointer;
-    }
-
     html {
         @apply font-mono scroll-smooth;
+        cursor: none;
+    }
+
+    a, button, [role="button"] {
+        cursor: none;
     }
 }
