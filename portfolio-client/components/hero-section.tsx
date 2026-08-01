@@ -21,25 +21,22 @@ function GithubIcon() {
 
 export function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center w-full max-h-svh aspect-2/3 xl:aspect-video overflow-hidden">
+    <section className="flex flex-col items-center justify-start w-full max-h-svh xl:aspect-video relative">
       <BackgroundGrid />
-
-      <div className="flex flex-row justify-start items-center w-full h-full max-w-400 p-6 md:p-16 lg:p-24">
-        <div className="relative z-10 flex flex-col items-start gap-6 text-left">
-          <p className="font-mono text-sm tracking-[0.3em] text-muted-foreground uppercase">
-            Hi, I&apos;m
-          </p>
-
-          <h1 className="font-heading text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
-            William Justin
-          </h1>
-
-          <div className="flex items-center gap-3 font-mono text-lg text-muted-foreground sm:text-xl">
-            <span className="text-primary"></span>
-            <span>AI + Fullstack Engineer</span>
+      <div className="flex flex-row justify-center items-center w-full py-24 px-6 md:px-16 lg:px-24 grow">
+        <div className="flex flex-col gap-8 w-full max-w-400">
+          <div className="flex flex-col gap-4">
+            <p className="font-mono text-sm tracking-[0.2em] text-muted-foreground uppercase">
+              Hello, I&apos;m
+            </p>
+            <h1 className="font-heading text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+              William Justin
+            </h1>
+            <p className="font-mono text-lg text-muted-foreground sm:text-xl">
+              Fullstack Engineer
+            </p>
           </div>
-
-          <div className="mt-4 flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4">
             <ButtonLink
               href={link.linkedin}
               target="_blank"

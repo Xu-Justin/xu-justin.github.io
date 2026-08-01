@@ -32,10 +32,12 @@ export function TechMarquee() {
   const items = [...TECH_STACK, ...TECH_STACK, ...TECH_STACK, ...TECH_STACK];
 
   return (
-    <div className="flex flex-col justify-start items-start border-y border-border bg-background/80 backdrop-blur-sm w-full max-w-screen overflow-hidden gap-3 p-4 lg:p-8">
-      <p className="font-mono text-xs tracking-[0.25em] text-muted-foreground uppercase">
-        {"// Tech Stack"}
-      </p>
+    <div className="flex flex-col justify-start items-center border-y border-border bg-background/80 backdrop-blur-sm w-full max-w-screen overflow-hidden gap-4 pt-8 pb-4 px-6 md:px-16 lg:px-24">
+      <div className="flex flex-col gap-4 w-full max-w-400">
+        <p className="font-mono text-sm tracking-[0.3em] text-muted-foreground uppercase">
+          {"// Tech Stack"}
+        </p>
+      </div>
       <div className="flex flex-row justify-start items-center gap-3 animate-[marquee_30s_linear_infinite]">
         {items.map((tech, i) => (
           <TechItem key={`a-${i}`} {...tech} />
