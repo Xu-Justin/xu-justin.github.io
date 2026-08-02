@@ -1,0 +1,179 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://xu-justin.github.io/#william-justin",
+      "name": "William Justin",
+      "url": "https://xu-justin.github.io/",
+      "description": "Fullstack software engineer specializing in backend engineering, AI, computer vision, and cloud-native applications.",
+      "jobTitle": "Fullstack Software Engineer",
+      "sameAs": [
+        "https://github.com/Xu-Justin",
+        "https://www.linkedin.com/in/william-justin-001/"
+      ],
+      "email": "mailto:williamjustin001@gmail.com",
+      "knowsAbout": [
+        "Java",
+        "Kotlin",
+        "TypeScript",
+        "Python",
+        "C/C++",
+        "Spring Boot",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "PyTorch",
+        "OpenCV",
+        "Docker",
+        "Amazon Web Services",
+        "Model Context Protocol",
+        "Artificial Intelligence",
+        "Computer Vision",
+        "Machine Learning",
+        "Generative AI",
+        "Cloud Computing",
+        "Backend Development",
+        "Frontend Development",
+        "Fullstack Development"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AWS Certified Cloud Practitioner",
+          "credentialCategory": "Professional Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Amazon Web Services"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Software Professional Certified Engineer",
+          "credentialCategory": "Professional Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Samsung"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "IELTS Academic",
+          "credentialCategory": "Language Proficiency",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "British Council / IDP"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://xu-justin.github.io/#website",
+      "url": "https://xu-justin.github.io/",
+      "name": "William Justin",
+      "description": "Personal portfolio of William Justin.",
+      "publisher": {
+        "@id": "https://xu-justin.github.io/#william-justin"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://xu-justin.github.io/#webpage",
+      "url": "https://xu-justin.github.io/",
+      "name": "William Justin — Fullstack Software Engineer",
+      "isPartOf": {
+        "@id": "https://xu-justin.github.io/#website"
+      },
+      "about": {
+        "@id": "https://xu-justin.github.io/#william-justin"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://xu-justin.github.io/#profile-image"
+      },
+      "mainEntity": {
+        "@id": "https://xu-justin.github.io/#william-justin"
+      },
+      "hasPart": [
+        {
+          "@type": "WebPageElement",
+          "@id": "https://xu-justin.github.io/#projects",
+          "name": "Projects",
+          "url": "https://xu-justin.github.io/#projects"
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": "https://xu-justin.github.io/#awards",
+          "name": "Awards",
+          "url": "https://xu-justin.github.io/#awards"
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": "https://xu-justin.github.io/#certifications",
+          "name": "Certifications",
+          "url": "https://xu-justin.github.io/#certifications"
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": "https://xu-justin.github.io/#contact",
+          "name": "Contact",
+          "url": "https://xu-justin.github.io/#contact"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://xu-justin.github.io/#featured-projects",
+      "name": "Featured Projects",
+      "url": "https://xu-justin.github.io/#projects",
+      "about": {
+        "@id": "https://xu-justin.github.io/#william-justin"
+      },
+      "hasPart": [
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "Patchmentation",
+          "url": "https://pypi.org/project/patchmentation/"
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "DeepFaceDrawing",
+          "url": "https://github.com/Xu-Justin/DeepFaceDrawing"
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "FiftyOne Embeddings Visualization",
+          "url": "https://github.com/Xu-Justin/fiftyone-plotly-dash"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Person Face Dataset",
+          "url": "https://www.kaggle.com/datasets/almightyj/person-face-dataset-thispersondoesnotexist"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Person Face Sketches Dataset",
+          "url": "https://www.kaggle.com/datasets/almightyj/person-face-sketches"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Duff Intelligence with MCP",
+          "url": "https://duffpadel.com/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Extra Mile Valley: Interactive Learning Gamification"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Forgr: Online Store Builder"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Grayscale Face Image Colorization",
+          "url": "https://github.com/Xu-Justin/DeepFaceDrawing"
+        }
+      ]
+    }
+  ]
+}

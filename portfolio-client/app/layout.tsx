@@ -1,5 +1,6 @@
-import { ThemeProvider } from "@/components/theme-provider";
 import { CursorTrail } from "@/components/cursor-trail";
+import { Jsonld } from "@/components/jsonld";
+import { ThemeProvider } from "@/components/theme-provider";
 import { fontMono, fontSans } from "@/config/font";
 import { cn } from "@/lib/utils";
 import "./globals.css";
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={cn("antialiased", fontSans.variable, "font-mono", fontMono.variable)}>
     <body className={"flex flex-col justify-start items-start w-screen h-svh overflow-x-hidden"}>
+    <Jsonld />
     <ThemeProvider>
       <CursorTrail />
       {children}

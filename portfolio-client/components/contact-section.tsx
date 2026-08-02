@@ -30,7 +30,7 @@ const CONTACT_LINKS: ContactLink[] = [
     label: "Email",
     description: "Send me a direct message",
     action: "Send Email",
-    href: "mailto:williamjustin001@gmail.com",
+    href: link.email,
     Icon: EmailIcon,
   },
 ];
