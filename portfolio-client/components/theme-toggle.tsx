@@ -41,7 +41,11 @@ export function ThemeToggle() {
     >
       <span
         onAnimationEnd={handleAnimationEnd}
-        style={spinning ? { animation: "spin 0.4s linear" } : undefined}
+        className={
+          spinning
+            ? "animate-spin animation-duration-[0.2s] shimmer-once ease-in-out"
+            : undefined
+        }
       >
         {resolvedTheme === "dark" ? <SunIcon /> : <MoonIcon />}
       </span>
