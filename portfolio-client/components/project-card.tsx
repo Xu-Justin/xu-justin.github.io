@@ -34,7 +34,7 @@ const Wrapper = ({
 export function ProjectCard({ title, description, tags, href, image }: ProjectCardProps) {
   return (
     <Wrapper href={href}>
-      <div className="relative w-full aspect-video bg-muted overflow-hidden">
+      <div className="relative w-full aspect-4/3 bg-muted overflow-hidden">
         {image ? (
           <Image
             src={image}
@@ -52,12 +52,12 @@ export function ProjectCard({ title, description, tags, href, image }: ProjectCa
         )}
       </div>
 
-      <div className="flex flex-col gap-3 sm:gap-4 p-6 pt-2">
+      <div className="flex flex-col gap-3 sm:gap-4 p-6">
         <div className="flex flex-col gap-1 sm:gap-2">
-          <h3 className="font-heading text-xl font-semibold tracking-tight">
+          <h3 className="font-heading text-xl font-semibold tracking-tight text-pretty">
             {title}
           </h3>
-          <p className="font-mono text-sm text-muted-foreground leading-relaxed">
+          <p className="font-mono text-sm text-muted-foreground leading-relaxed text-pretty">
             {description}
           </p>
         </div>
