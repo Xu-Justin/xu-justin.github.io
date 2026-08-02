@@ -7,6 +7,7 @@ interface ProjectCardProps {
   tags: string[];
   href?: string;
   image?: StaticImageData | string;
+  comingSoon?: boolean;
 }
 
 const Wrapper = ({
@@ -31,7 +32,7 @@ const Wrapper = ({
     </div>
   );
 
-export function ProjectCard({ title, description, tags, href, image }: ProjectCardProps) {
+export function ProjectCard({ title, description, tags, href, image, comingSoon }: ProjectCardProps) {
   return (
     <Wrapper href={href}>
       <div className="relative w-full aspect-4/3 bg-muted overflow-hidden">
@@ -74,11 +75,15 @@ export function ProjectCard({ title, description, tags, href, image }: ProjectCa
           ))}
         </div>
 
-        {href && (
+        {href ? (
           <span className="font-mono text-primary text-sm inline-flex items-center gap-1 transition-transform duration-200 group-hover:translate-x-1 mt-auto">
             View Project →
           </span>
-        )}
+        ) : comingSoon ? (
+          <span className="font-mono text-primary text-sm mt-auto">
+            Coming Soon
+          </span>
+        ) : null}
       </div>
     </Wrapper>
   );

@@ -33,6 +33,7 @@ const DUMMY_PROJECTS = [
       "A direct selling platform that lets brands launch their own storefront, own their customers, and sell without marketplace commissions.",
     tags: ["Next.js", "Kotlin", "Commerce", "QRIS"],
     image: image_forgr,
+    comingSoon: true,
   },
   {
     title: "Patchmentation: A Python Library for Patch Augmentation",
