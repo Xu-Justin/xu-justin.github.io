@@ -20,6 +20,20 @@ export function CursorTrail() {
   const rafRef = useRef<number>(0);
 
   useEffect(() => {
+    // Disable on touch / coarse pointer devices to avoid unnecessary work and visual clutter
+    const isTouchOrCoarse = () =>
+      typeof window !== "undefined" &&
+      (("ontouchstart" in window) ||
+        (navigator.maxTouchPoints ?? 0) > 0 ||
+        (window.matchMedia && window.matchMedia("(pointer: coarse)").matches));
+
+    if (isTouchOrCoarse()) {
+      // Hide canvas entirely on touch devices
+      const c = canvasRef.current;
+      if (c) c.style.display = "none";
+      return;
+    }
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
