@@ -64,7 +64,7 @@ function CertificationCard({ title, issuer, description, href }: Certification) 
   }
 
   return (
-    <div className="flex flex-col gap-4 border border-border px-6 py-8">
+    <div className="group flex flex-col gap-4 border border-border px-6 py-8 hover:border-primary transition-colors duration-200">
       {content}
     </div>
   );
