@@ -28,7 +28,7 @@ const DUMMY_PROJECTS = [
     image: image_extra_mile_valley,
   },
   {
-    title: "Forgr: Online Store Builder",
+    title: "Forgr: Online Store Builder Platform",
     description:
       "A direct selling platform that lets brands launch their own storefront, own their customers, and sell without marketplace commissions.",
     tags: ["Next.js", "Kotlin", "Commerce", "QRIS"],

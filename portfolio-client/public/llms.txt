@@ -29,7 +29,7 @@
 - **Summary:** Web-based gamification platform that helps employees learn and internalize company values through interactive gameplay.
 - **Technologies:** Next.js, Tailwind CSS, Java, Spring Boot
 
-### Forgr: Online Store Builder
+### Forgr: Online Store Builder Platform
 - **Summary:** Direct-selling commerce platform enabling brands to launch independent online stores, own customer relationships, and avoid marketplace commissions.
 - **Technologies:** Next.js, Kotlin, Commerce, QRIS
 - **Status:** Coming Soon
