@@ -42,6 +42,7 @@ export function ProjectCard({ title, description, tags, href, image }: ProjectCa
             fill
             className="object-contain"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            placeholder="blur"
           />
         ) : (
           <div className="flex items-center justify-center w-full h-full">
