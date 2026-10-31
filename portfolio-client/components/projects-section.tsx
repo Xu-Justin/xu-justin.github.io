@@ -1,7 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import { ProjectCard } from "@/components/project-card";
 import { SectionHeader } from "@/components/section-header";
+import { Button } from "@/components/ui/button";
 
 import image_duff_intelligence from "@/public/featured_projects/duff-intelligence.webp";
+import image_mcp_schema_patcher from "@/public/featured_projects/mcp-tool-schema-patcher.jpg";
 import image_forgr from "@/public/featured_projects/forgr.webp";
 import image_extra_mile_valley from "@/public/featured_projects/extra-mile-valley.webp";
 import image_patchmentation from "@/public/featured_projects/patchmentation.webp";
@@ -12,6 +17,14 @@ import image_person_face_dataset from "@/public/featured_projects/person-face-da
 import image_person_face_sketches_dataset from "@/public/featured_projects/person-face-sketches-dataset.webp";
 
 const DUMMY_PROJECTS = [
+  {
+    title: "MCP Tool Schema Patcher",
+    description:
+      "A Java and Kotlin library that repairs MCP input schema references and Kotlin nullability for Spring Boot 3.5 applications using Spring AI 1.1.x.",
+    tags: ["Java", "Kotlin", "MCP", "Spring AI"],
+    href: "https://github.com/Xu-Justin/mcp-tool-schema-patcher",
+    image: image_mcp_schema_patcher,
+  },
   {
     title: "Duff Intelligence with MCP",
     description:
@@ -86,6 +99,9 @@ const DUMMY_PROJECTS = [
 ];
 
 export function ProjectsSection() {
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? DUMMY_PROJECTS : DUMMY_PROJECTS.slice(0, 9);
+
   return (
     <section id="projects" className="flex flex-col items-center justify-start w-full py-16 sm:py-24 px-6 md:px-16 lg:px-24">
       <div className="flex flex-col gap-12 sm:gap-16 w-full max-w-400">
@@ -95,11 +111,23 @@ export function ProjectsSection() {
           subtitle="These are some of my favorite things I've built so far. Each one represents a challenge, a lesson, and a chance to turn ideas into products and something meaningful."
         />
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {DUMMY_PROJECTS.map((project) => (
+        <div id="featured-projects" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {visibleProjects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
         </div>
+        {!showAll && DUMMY_PROJECTS.length > 9 && (
+          <Button
+            variant="outline"
+            size="lg"
+            className="self-center rounded-none px-6 font-mono"
+            aria-controls="featured-projects"
+            aria-expanded={showAll}
+            onClick={() => setShowAll(true)}
+          >
+            View more
+          </Button>
+        )}
       </div>
     </section>
   );
