@@ -1,9 +1,5 @@
-"use client";
-
-import { useState } from "react";
 import { ProjectCard } from "@/components/project-card";
 import { SectionHeader } from "@/components/section-header";
-import { Button } from "@/components/ui/button";
 
 import image_duff_intelligence from "@/public/featured_projects/duff-intelligence.webp";
 import image_mcp_schema_patcher from "@/public/featured_projects/mcp-tool-schema-patcher.jpg";
@@ -99,9 +95,6 @@ const DUMMY_PROJECTS = [
 ];
 
 export function ProjectsSection() {
-  const [showAll, setShowAll] = useState(false);
-  const visibleProjects = showAll ? DUMMY_PROJECTS : DUMMY_PROJECTS.slice(0, 9);
-
   return (
     <section id="projects" className="flex flex-col items-center justify-start w-full py-16 sm:py-24 px-6 md:px-16 lg:px-24">
       <div className="flex flex-col gap-12 sm:gap-16 w-full max-w-400">
@@ -112,22 +105,10 @@ export function ProjectsSection() {
         />
 
         <div id="featured-projects" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {visibleProjects.map((project) => (
+          {DUMMY_PROJECTS.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
         </div>
-        {!showAll && DUMMY_PROJECTS.length > 9 && (
-          <Button
-            variant="outline"
-            size="lg"
-            className="self-center rounded-none px-6 font-mono"
-            aria-controls="featured-projects"
-            aria-expanded={showAll}
-            onClick={() => setShowAll(true)}
-          >
-            View more
-          </Button>
-        )}
       </div>
     </section>
   );

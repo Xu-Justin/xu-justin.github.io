@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { ComponentType } from "react";
 import { PencilIcon, TrophyIcon } from "@/components/icons";
 import { SectionHeader } from "@/components/section-header";
@@ -5,6 +6,10 @@ import { SectionHeader } from "@/components/section-header";
 interface Award {
   title: string;
   issuer: string;
+  logo: string;
+  logoBackground: string;
+  logoClassName?: string;
+  logoPadding?: string;
   date: string;
   description: string;
 }
@@ -13,6 +18,9 @@ const PROFESSIONAL_AWARDS: Award[] = [
   {
     title: "Exceed Expectation (EE)",
     issuer: "Traveloka",
+    logo: "/organizations/traveloka.png",
+    logoBackground: "bg-white",
+    logoPadding: "p-0",
     date: "2025",
     description:
       "Rated Exceed Expectation in the 2025 performance cycle at Traveloka.",
@@ -20,6 +28,9 @@ const PROFESSIONAL_AWARDS: Award[] = [
   {
     title: "Employee of the Quarter",
     issuer: "Samsung Research",
+    logo: "/organizations/samsung.png",
+    logoBackground: "bg-black",
+    logoClassName: "brightness-0 invert",
     date: "Q2 2024",
     description:
       "Consecutive quarterly recognition for sustained high performance and contributions at Samsung Research.",
@@ -27,6 +38,9 @@ const PROFESSIONAL_AWARDS: Award[] = [
   {
     title: "Employee of the Quarter",
     issuer: "Samsung Research",
+    logo: "/organizations/samsung.png",
+    logoBackground: "bg-black",
+    logoClassName: "brightness-0 invert",
     date: "Q1 2024",
     description:
       "Recognized for exceptional performance and impact during Q1 2024 at Samsung Research.",
@@ -35,35 +49,44 @@ const PROFESSIONAL_AWARDS: Award[] = [
 
 const CP_AWARDS: Award[] = [
   {
-    title: "Problem Author",
+    title: "Problem Setter",
     issuer: "ICPC Asia Jakarta Regional Contest",
+    logo: "/organizations/icpc.svg",
+    logoBackground: "bg-white",
     date: "2025",
     description:
       "Authored competitive programming problems for one of Asia's most prestigious ICPC regional contests.",
   },
   {
-    title: "Problem Author",
+    title: "Problem Setter",
     issuer: "Indonesia National Contest (INC)",
+    logo: "/organizations/icpc.svg",
+    logoBackground: "bg-white",
     date: "2024",
     description:
       "Contributed original problems to the Indonesia National Contest, a premier national-level programming competition.",
   },
 ];
 
-function AwardCard({ title, issuer, date, description }: Award) {
+function AwardCard({ title, issuer, logo, logoBackground, logoClassName = "", logoPadding = "p-2", date, description }: Award) {
   return (
-    <div className="flex flex-col gap-2 border border-border px-6 py-6 hover:border-primary transition-colors duration-200">
-      <div className="flex flex-col gap-0.5">
-        <span className="font-heading text-base font-semibold tracking-tight">
-          {title} — {date}
-        </span>
-        <span className="font-mono text-sm text-primary">
-          {issuer}
-        </span>
+    <div className="flex items-start gap-4 sm:gap-6 border border-border px-6 py-6 hover:border-primary transition-colors duration-200">
+      <div className={`flex size-12 sm:size-14 shrink-0 items-center justify-center border border-border ${logoPadding} ${logoBackground}`}>
+        <Image src={logo} alt="" width={56} height={56} className={`size-full object-contain ${logoClassName}`} />
       </div>
-      <p className="font-mono text-sm text-muted-foreground leading-relaxed text-pretty">
-        {description}
-      </p>
+      <div className="flex min-w-0 flex-1 flex-col gap-2">
+        <div className="flex flex-col gap-0.5">
+          <span className="font-heading text-base font-semibold tracking-tight">
+            {title} — {date}
+          </span>
+          <span className="font-mono text-sm text-primary">
+            {issuer}
+          </span>
+        </div>
+        <p className="font-mono text-sm text-muted-foreground leading-relaxed text-pretty">
+          {description}
+        </p>
+      </div>
     </div>
   );
 }
