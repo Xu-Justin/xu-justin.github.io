@@ -20,6 +20,11 @@
 
 ## Featured Projects
 
+### MCP Tool Schema Patcher
+- **Summary:** A Java and Kotlin library that repairs MCP input schema references and Kotlin nullability for Spring Boot 3.5 applications using Spring AI 1.1.x.
+- **Technologies:** Java, Kotlin, MCP, Spring AI
+- **GitHub:** https://github.com/Xu-Justin/mcp-tool-schema-patcher
+
 ### Duff Intelligence with MCP
 - **Summary:** AI revenue intelligence copilot for sports venue owners that uses Model Context Protocol (MCP) integrations to provide business insights and decision support.
 - **Technologies:** AI, MCP, Next.js, Kotlin
@@ -69,7 +74,7 @@
 ### Exceed Expectation (EE)
 - **Issuer:** Traveloka
 - **Date:** 2025
-- **Summary:** Awarded the highest performance rating, *Exceed Expectation*, during the 2025 performance review cycle.
+- **Summary:** Rated Exceed Expectation in the 2025 performance cycle at Traveloka.
 
 ### Employee of the Quarter
 - **Issuer:** Samsung Research
@@ -81,25 +86,29 @@
 - **Date:** Q1 2024
 - **Summary:** Recognized for exceptional performance and significant contributions during the first quarter of 2024.
 
-### Problem Author
+### Problem Setter
 - **Issuer:** ICPC Asia Jakarta Regional Contest
 - **Date:** 2025
 - **Summary:** Authored official competitive programming problems for the ICPC Asia Jakarta Regional Contest.
 
-### Problem Author
+### Problem Setter
 - **Issuer:** Indonesia National Contest (INC)
 - **Date:** 2024
 - **Summary:** Designed original algorithmic problems for the Indonesia National Contest (INC), a national competitive programming competition.
 
 ## Certifications
 
+### AWS Certified Solutions Architect – Professional
+- **Issuer:** Amazon Web Services
+- **Summary:** Professional certification validating expertise in designing complex AWS architectures.
+
 ### AWS Certified Cloud Practitioner
 - **Issuer:** Amazon Web Services
 - **Summary:** Foundational certification validating cloud computing knowledge and proficiency with core AWS services.
 
 ### Software Professional Certified Engineer
-- **Issuer:** Samsung
-- **Summary:** Internal Samsung certification recognizing professional-level software engineering expertise.
+- **Issuer:** Samsung Research
+- **Summary:** Internal Samsung Research certification recognizing professional-level software engineering expertise.
 
 ### IELTS Academic
 - **Issuer:** British Council / IDP

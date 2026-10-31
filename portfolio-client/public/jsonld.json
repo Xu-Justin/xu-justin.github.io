@@ -40,6 +40,15 @@
       "hasCredential": [
         {
           "@type": "EducationalOccupationalCredential",
+          "name": "AWS Certified Solutions Architect – Professional",
+          "credentialCategory": "Professional Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Amazon Web Services"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
           "name": "AWS Certified Cloud Practitioner",
           "credentialCategory": "Professional Certification",
           "recognizedBy": {
@@ -53,7 +62,7 @@
           "credentialCategory": "Professional Certification",
           "recognizedBy": {
             "@type": "Organization",
-            "name": "Samsung"
+            "name": "Samsung Research"
           }
         },
         {
@@ -130,6 +139,17 @@
         "@id": "https://xu-justin.github.io/#william-justin"
       },
       "hasPart": [
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "MCP Tool Schema Patcher",
+          "description": "A Java and Kotlin library that repairs MCP input schema references and Kotlin nullability for Spring Boot 3.5 applications using Spring AI 1.1.x.",
+          "url": "https://github.com/Xu-Justin/mcp-tool-schema-patcher",
+          "codeRepository": "https://github.com/Xu-Justin/mcp-tool-schema-patcher",
+          "programmingLanguage": [
+            "Java",
+            "Kotlin"
+          ]
+        },
         {
           "@type": "SoftwareSourceCode",
           "name": "Patchmentation",
